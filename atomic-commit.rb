@@ -1,3 +1,5 @@
+require "language/python/virtualenv"
+
 class AtomicCommit < Formula
   desc "Track uncommitted changes in git repositories with visual indicators"
   homepage "https://github.com/DanLennon/atomic-commit"
