@@ -8,7 +8,7 @@ class AtomicCommit < Formula
   depends_on "python@3.12"
 
   def install
-    system "pip3", "install", ".", "--prefix=#{prefix}"
+    system Formula["python@3.12"].opt_bin/"python3", "-m", "pip", "install", ".", "--prefix=#{prefix}"
   end
 
   test do
