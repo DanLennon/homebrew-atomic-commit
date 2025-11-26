@@ -1,7 +1,9 @@
+require "language/python/virtualenv"
+
 class AtomicCommit < Formula
   desc "Track uncommitted changes in git repositories with visual indicators"
   homepage "https://github.com/DanLennon/atomic-commit"
-  url "https://github.com/DanLennon/atomic-commit/archive/v1.0.0.tar. gz"
+  url "https://github.com/DanLennon/atomic-commit/archive/v1.0.0.tar.gz"
   sha256 "80d07501130ed434d5eea4e712d6c9b009fe5deb10955b804d54f304f47d6f5c"
   license "MIT"
 
@@ -26,4 +28,3 @@ class AtomicCommit < Formula
     EOS
   end
 end
-EOF
