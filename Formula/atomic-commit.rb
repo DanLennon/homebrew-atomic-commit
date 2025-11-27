@@ -9,8 +9,8 @@ class AtomicCommit < Formula
   depends_on "uv"
 
   def install
-    system Formula["uv"].opt_bin/"uv", "pip", "install", ".", "--python", 
-           Formula["python@3.12"].opt_bin/"python3", "--prefix", prefix
+    python = Formula["python@3.12"].opt_bin/"python3.12"
+    system Formula["uv"].opt_bin/"uv", "pip", "install", ".", "--python", python, "--prefix", prefix
     bin.install Dir["#{prefix}/bin/*"]
   end
 
