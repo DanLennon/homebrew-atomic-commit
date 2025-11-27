@@ -9,7 +9,8 @@ class AtomicCommit < Formula
   depends_on "uv"
 
   def install
-    system Formula["uv"].opt_bin/"uv", "pip", "install", ".", "--python", Formula["python@3.12"].opt_bin/"python3", "--prefix", prefix
+    system Formula["uv"].opt_bin/"uv", "pip", "install", ".", "--python", 
+           Formula["python@3.12"].opt_bin/"python3", "--prefix", prefix
     bin.install Dir["#{prefix}/bin/*"]
   end
 
@@ -21,5 +22,8 @@ class AtomicCommit < Formula
     <<~EOS
       To integrate with your shell prompt, add to ~/.zshrc:
         setopt PROMPT_SUBST
-        RPROMPT='$(git rev-parse --is-inside-work-tree >/dev/null 2>&1 && atomic-commit 2>/dev/null
-
+        RPROMPT='$(git rev-parse --is-inside-work-tree >/dev/null 2>&1 && atomic-commit 2>/dev/null)'
+      Then run: source ~/.zshrc
+    EOS
+  end
+end
