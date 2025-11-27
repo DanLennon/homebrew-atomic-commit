@@ -11,7 +11,6 @@ class AtomicCommit < Formula
   def install
     python = Formula["python@3.12"].opt_bin/"python3.12"
     system Formula["uv"].opt_bin/"uv", "pip", "install", ".", "--python", python, "--prefix", prefix
-    bin.install Dir["#{prefix}/bin/*"]
   end
 
   test do
