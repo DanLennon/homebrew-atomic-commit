@@ -1,8 +1,8 @@
 class AtomicCommit < Formula
   desc "Track uncommitted changes in git repositories with visual indicators"
   homepage "https://github.com/DanLennon/atomic-commit"
-  url "https://github.com/DanLennon/atomic-commit/archive/v1.0.0.tar.gz"
-  sha256 "80d07501130ed434d5eea4e712d6c9b009fe5deb10955b804d54f304f47d6f5c"
+  url "https://github.com/DanLennon/atomic-commit/archive/v1.0.1.tar.gz"
+  sha256 "5f1f7d33082cac1b2938fd81862d34fbb87c08fd1664d9d620cac2ea105a5437"
   license "MIT"
 
   depends_on "python@3.12"
